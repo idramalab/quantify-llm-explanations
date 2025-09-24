@@ -1,0 +1,8 @@
+pandas==2.3.2
+pyarrow==21.0.0
+fastparquet==2024.11.0
+scikit-learn==1.7.2
+tqdm==4.67.1
+umap-learn==0.5.8
+matplotlib==3.10.6
+seaborn==0.13.2
