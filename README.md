@@ -1,8 +1,8 @@
 # Evaluating Large Language Models for Detecting Antisemitism
 
 <p align="center" width="100%">
-    <a href="https://github.com/Ravi2712/quantify-llm-responses/blob/main/assets/paper-teaser.png">
-    <img src="https://github.com/Ravi2712/quantify-llm-responses/blob/main/assets/paper-teaser.png" style="width: 450px; max-width: 100%; height: auto; display: block; margin: auto;" alt="paper-teaser" />
+    <a href="https://github.com/idramalab/quantify-llm-explanations/blob/main/assets/paper-teaser.png">
+    <img src="https://github.com/idramalab/quantify-llm-explanations/blob/main/assets/paper-teaser.png" style="width: 450px; max-width: 100%; height: auto; display: block; margin: auto;" alt="paper-teaser" />
     </a>
 </p>
 
@@ -80,9 +80,7 @@ Outputs (by default):
 * Sorts samples by `pred_class` and visualizes a **within-model cosine-distance heatmap**.
 * Useful for spotting tight/loose clusters by class.
 
-## 🧪 Main pipeline notes
-
-Inside `main.py`:
+APIs `input` requirement:
 
 * **UMAP reduction**
   Toggle `is_reduce_dimensions`. When `True`, the code:
@@ -114,7 +112,7 @@ Inside `main.py`:
   }
   ```
 
-## 🧭 Usage (Checkout `main.py` file):
+## 🧭 Usage:
 
 ```python
 # DataFrames per model
@@ -135,6 +133,8 @@ imd.plot_classwise_difference({
     for m, df in all_models_df.items()
 })
 ```
+
+Checkout `main.py` file more details!
 
 ## 📄 Citation
 
